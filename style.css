@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.status {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+main {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+#hero p {
+    color: #7f8c8d;
+}
+
+#guides {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.card h3 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* For Mobile Native App Feel */
+@media (max-width: 600px) {
+    body {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .card {
+        border: 1px solid #eee;
+    }
+}
